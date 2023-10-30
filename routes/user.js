@@ -34,6 +34,6 @@ router.post('/editNameProfile', user.middleWare, user.editNameProfile1)
 
 router.post('/editEmailProfile', user.middleWare,   user.editEmailProfile)
 router.post('/editTicket', user.editRequest)
-router.delete('/deleteTicket', user.deleteTicket)
+router.post('/deleteTicket', user.deleteTicket)
 
 module.exports = router;
